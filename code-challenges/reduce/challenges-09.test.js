@@ -10,6 +10,10 @@ Note: You may not use the array's built-in length property.
 
 const countNumberOfElements = (arr) => {
   // Solution code here...
+  let total = arr.reduce((answer, value) => {
+    return answer = value;
+  },0)
+  return total;
 };
 
 /* ------------------------------------------------------------------------------------------------
