@@ -47,6 +47,8 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 
 const salesData = (hours, data) => {
   // Solution code here...
+  hours.forEach((value,i));
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -69,7 +71,12 @@ const errands = [
 
 const howManyTreats = (arr) => {
   // Solution code here...
-};
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i].store ===  'Pet store') {
+//       for let j = 0; j < arr.length
+//     }
+//   }
+// };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -91,6 +98,10 @@ The top row of the board is considered row zero and row numbers increase as they
 
 const battleship = (board, row, col) => {
   //  Solution code here...
+  if (board[row][col] === '#') {
+    return 'hit';
+  }
+  return 'miss'
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -103,6 +114,17 @@ For example, the following input returns a product of 720: [[1,2], [3,4], [5,6]]
 
 const calculateProduct = (numbers) => {
   // Solution code here...
+  return numbers.map(arr => {
+    if (arr.length > 0) {
+      return arr.reduce((acc, cur) => {
+        return acc * cur;
+      });
+    } else {
+      return 1;
+    }
+  }).reduce ((acc, cur) => {
+    return acc * cur;
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -123,6 +145,13 @@ const weeklyTemperatures = [
 
 const averageDailyTemperature = (weather) => {
   // Solution code here...
+  return weather.map(arr => {
+    return arr.reduce((acc, cur) => {
+      return acc + cur;
+    }) / arr.length;
+  }).reduce((acc, cur) => {
+    return acc + cur;
+  }) /weather.length;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -144,6 +173,19 @@ let lowestWeeklyTemperatureData = [
 
 const lowestWeeklyAverage = (weather) => {
   // Solution code here...
+  let weeklyAverage = weather.map (arr => {
+    return arr.reduce((acc, cur) => {
+      return acc + cur;
+    }) / arr.length;
+  });
+  let lowestAverage = weeklyAverage.reduce((acc, cur) => {
+    if (acc< cur) {
+      return acc;
+    } else {
+      return cur;
+    }
+  });
+  return lowestAverage;
 };
 
 /* ------------------------------------------------------------------------------------------------
