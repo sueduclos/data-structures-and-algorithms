@@ -45,7 +45,10 @@ For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 ------------------------------------------------------------------------------------------------ */
 
 const notInFirstArray = (forbiddenValues, arr) => {
-  // Solution code here...
+  return arr.filter(elem => {
+    let misMatch = !forbiddenValues.includes(elem);
+    return misMatch;
+  })
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -100,7 +103,9 @@ For example, getStatName(snorlaxData.stats, 50) will return ['special-defense', 
 ------------------------------------------------------------------------------------------------ */
 
 const getStatName = (arr, minBaseStat) => {
-  // Solution code here...
+  return arr.filter(object => object.baseStat > minBaseStat).map(elem => {
+    return elem.stat.name;
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -153,7 +158,11 @@ const characters = [
 ];
 
 const getCharactersWithoutChildren = (arr) => {
-  // Solution code here...
+  return arr.filter(obj => {
+    if (!obj.children) {
+      return obj;
+    }
+  })
 };
 
 /* ------------------------------------------------------------------------------------------------
