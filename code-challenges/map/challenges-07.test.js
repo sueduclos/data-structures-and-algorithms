@@ -62,6 +62,9 @@ For example: charCode(['h','i']) returns [104, 105].
 
 const charCode = (arr) => {
   // Solution code here...
+  return arr.map((value, index) => {
+    return value.charCodeAt(0);
+  })
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -76,6 +79,11 @@ For example: evenOdd([1,2,3]) returns ['odd','even','odd'].
 
 const evenOdd = (arr) => {
   // Solution code here...
+  return arr.map((value) => {
+    return value % 2 === 0 ? 'even'
+      : isNaN(value) ? 'N/A'
+        : 'odd'
+  })
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -122,6 +130,9 @@ const snorlaxAbilities = {
 
 const extractAbilities = (arr) => {
   // Solution code here...
+  return arr.map(value => {
+    return value.ability.name
+  })
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -169,6 +180,9 @@ const snorlaxStats = {
 
 const extractStats = (arr) => {
   // Solution code here...
+  return arr.map(value => {
+    return {name: value.stat.name, total: value.effort + value.baseStat}
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
