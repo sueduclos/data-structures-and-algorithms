@@ -89,7 +89,10 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 ------------------------------------------------------------------------------------------------ */
 
 const reversedString = (str) => {
-  // Solution code here...
+  let arr = str.split('');
+  return arr.reduce((acc, cur) => {
+    return cur + acc;
+  }, '');
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -142,7 +145,13 @@ const characters = [
 ];
 
 const countNumberOfChildren = (arr) => {
-  // Solution code here...
+  let children = arr.reduce((acc, value) => {
+    if (value.children){
+      acc += value.children.length;
+    }
+    return acc;
+  },0)
+  return children;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -154,7 +163,12 @@ Hint: The accumulator should begin as { count: 0, sum: 0 }
 ------------------------------------------------------------------------------------------------ */
 
 const calculateAverage = (arr) => {
-  // Solution code here...
+  // let average = arr.reduce((acc, cur, index) => {
+  //   acc.sum += cur;
+  //   acc.count = index + 1;
+  //   return acc;
+  // },{count: 0, sum: 0 });
+  // return average;
 };
 
 /* ------------------------------------------------------------------------------------------------
