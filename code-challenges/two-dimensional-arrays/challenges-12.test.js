@@ -47,8 +47,14 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 
 const salesData = (hours, data) => {
   // Solution code here...
-  hours.forEach((value,i));
-
+  let resultArr = [];
+  hours.forEach((value,i) => {
+    let sales = {};
+    sales['sales'] = `${data[i]} cookies`;
+    sales['time'] = value;
+    resultArr.push(sales);
+  });
+  return resultArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -71,12 +77,16 @@ const errands = [
 
 const howManyTreats = (arr) => {
   // Solution code here...
-//   for (let i = 0; i < arr.length; i++) {
-//     if (arr[i].store ===  'Pet store') {
-//       for let j = 0; j < arr.length
-//     }
-//   }
-// };
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].store ==='Pet store') {
+      for (let j = 0; j < arr[i].items.length; j++) {
+        if (arr[i].items[j].name === 'Treats') {
+          return arr[i].items[j].quantity;
+        }
+      }
+    }
+  }
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -97,11 +107,10 @@ The top row of the board is considered row zero and row numbers increase as they
 ------------------------------------------------------------------------------------------------ */
 
 const battleship = (board, row, col) => {
-  //  Solution code here...
   if (board[row][col] === '#') {
     return 'hit';
   }
-  return 'miss'
+  return 'miss';
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -116,13 +125,13 @@ const calculateProduct = (numbers) => {
   // Solution code here...
   return numbers.map(arr => {
     if (arr.length > 0) {
-      return arr.reduce((acc, cur) => {
+      return arr.reduce((acc,cur) => {
         return acc * cur;
       });
     } else {
       return 1;
     }
-  }).reduce ((acc, cur) => {
+  }).reduce((acc,cur) => {
     return acc * cur;
   });
 };
@@ -150,8 +159,8 @@ const averageDailyTemperature = (weather) => {
       return acc + cur;
     }) / arr.length;
   }).reduce((acc, cur) => {
-    return acc + cur;
-  }) /weather.length;
+    return acc +cur;
+  })/ weather.length;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -173,19 +182,19 @@ let lowestWeeklyTemperatureData = [
 
 const lowestWeeklyAverage = (weather) => {
   // Solution code here...
-  let weeklyAverage = weather.map (arr => {
+  let weeklyAvg = weather.map(arr => {
     return arr.reduce((acc, cur) => {
       return acc + cur;
     }) / arr.length;
   });
-  let lowestAverage = weeklyAverage.reduce((acc, cur) => {
-    if (acc< cur) {
+  let lowestAvg = weeklyAvg.reduce((acc, cur) => {
+    if (acc < cur) {
       return acc;
     } else {
       return cur;
     }
   });
-  return lowestAverage;
+  return lowestAvg;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -202,6 +211,16 @@ For example, excel('1,1,1\n4,4,4\n9,9,9') returns [3, 12, 27].
 
 const excel = (str) => {
   // Solution code here...
+  let strSplitN = str.split('\n');
+  let comma = strSplitN.map(arr => {
+    return arr.split(',');
+  });
+
+  return comma.map(arr => {
+    return arr.reduce((acc, cur) => {
+      return parseInt(acc) + parseInt(cur);
+    })
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
