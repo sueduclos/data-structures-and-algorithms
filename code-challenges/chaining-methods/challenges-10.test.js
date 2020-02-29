@@ -13,7 +13,16 @@ For example, count(5, [[1, 3, 5, 7, 9], [5, 5, 5], [1, 2, 3]]) returns 4.
 
 const count = (target, input) => {
   // Solution code here...
-  return count.filter(target);
+  let count = 0;
+  input.forEach(arr => {
+    arr.forEach(value => {
+      if (target === value) {
+        count++;
+      }
+    })
+  })
+  return count;
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -27,6 +36,13 @@ For example, [[1, 2, 3, 4, 5], [6, 7, 2, 4, 5, 7], [9, 2, 3, 6,]] returns 66.
 
 const totalSum = (input) => {
   // Solution code here...
+  let arrSum = 0;
+  for (let i =0; i < input.length; i++) {
+    for (let j = 0; j <input[i].length; j++) {
+      arrSum += input[i][j];
+    }
+  }
+  return arrSum;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -43,6 +59,15 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 
 const divisibleByFiveTwoToThePower = (input) => {
   // Solution code here...
+  return input.map(value => {
+    return value.filter(num=> {
+      return typeof(num) === 'number' && num % 5 === 0;
+    });
+  }).map(arr => {
+    return arr.map(value => {
+      return Math.pow(2, value);
+    })
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -109,6 +134,11 @@ let starWarsData = [{
 
 let findMaleAndFemale = (data) => {
   // Solution code here...
+  return data.filter(obj => {
+    return obj.gender === 'male'|| obj.gender === 'female';
+  }).map(obj => {
+    return obj.name;
+  }).join(' and ');
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -119,6 +149,13 @@ Write a function named findShortest that, given the Star Wars data from Challeng
 
 let findShortest = (data) => {
   // Solution code here...
+  return data.reduce((acc, cur) => {
+    if (parseInt(acc.height) < parseInt(cur.height)) {
+      return acc;
+    } else {
+      return cur;
+    }
+  }).name;
 };
 
 /* ------------------------------------------------------------------------------------------------
