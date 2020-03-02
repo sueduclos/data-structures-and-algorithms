@@ -70,7 +70,9 @@ let characters = [
 
 const getHouses = (arr) => {
   let houses = [];
-  // Solution code here...
+  for (let i = 0; i < characters.length; i++) {
+    houses.push(characters[i].house);
+  }
   return houses;
 };
 
@@ -87,8 +89,11 @@ hasChildrenValues(characters, 'Sansa') will return false
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenValues = (arr, character) => {
-  // Solution code here...
-
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].name === character) {
+      return (Object.values(arr[i])[2].length > 0)
+    }
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -101,6 +106,11 @@ The input and output of this function are the same as the input and output from 
 
 const hasChildrenEntries = (arr, character) => {
   // Solution code here...
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].name === character) {
+      return Object.entries(arr[i])[2][1].length > 0;
+    }
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -111,6 +121,14 @@ Write a function named totalCharacters that takes in an array and returns the nu
 
 const totalCharacters = (arr) => {
   // Solution code here...
+  let addUp = arr.length;
+  arr.forEach(object => {
+    if (object.spouse) {
+      addUp += 1;
+    }
+    addUp += object.children.length;
+  });
+  return addUp;
 };
 
 /* ------------------------------------------------------------------------------------------------
