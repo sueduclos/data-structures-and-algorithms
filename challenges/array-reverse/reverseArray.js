@@ -7,3 +7,5 @@ let reverseArray = (arr) => {
   }
   return newArray;
 };
+
+console.log(reverseArray([1, 2, 3, 4]));
