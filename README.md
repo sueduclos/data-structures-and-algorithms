@@ -10,7 +10,7 @@ Links Coming Soon!
 
 ### Challenges  
 
-- [Code Challenge 01 - Array Reverse](https://github.com/)
+- [Code Challenge 01 - Array Reverse](hhttps://github.com/sueduclos/data-structures-and-algorithms/tree/master/challenges/array-reverse)
 
 - [Code Challenge 02 - Array Shift](https://github.com/)
 
