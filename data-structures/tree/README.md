@@ -13,6 +13,8 @@ This application will be the implementation of a BinaryTree and BinarySearchTree
 ## Approach & Efficiency
     
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+Resource: https://www.geeksforgeeks.org/implementation-binary-search-tree-javascript/
     
 ## API
     
