@@ -1,0 +1,14 @@
+{
+  "name": "tree",
+  "version": "1.0.0",
+  "description": "This application will be the implementation of a BinaryTree and BinarySearchTree class, and any important methods related to that.",
+  "main": "tree.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint **/*.js",
+    "test": "jest --verbose --coverage",
+    "test-watch": "jest --watchAll --verbose --coverage"
+  },
+  "author": "Sue Duclos",
+  "license": "ISC"
+}
