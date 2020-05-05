@@ -10,7 +10,7 @@ Links Coming Soon!
 
 ### Challenges  
 
-- [Code Challenge 01 - Array Reverse](hhttps://github.com/sueduclos/data-structures-and-algorithms/tree/master/challenges/array-reverse)
+- [Code Challenge 01 - Array Reverse](https://github.com/sueduclos/data-structures-and-algorithms/tree/master/challenges/array-reverse)
 
 - [Code Challenge 02 - Array Shift](https://github.com/)
 
@@ -24,12 +24,12 @@ Links Coming Soon!
 
 ### Data Structures  
 
-- [Lab 5 - DSA: Linked List](https://github.com/)
+- [Lab 5 - DSA: Linked List](https://github.com/sueduclos/data-structures-and-algorithms/tree/master/data-structures/linkedList)
 
-- [Code Challenge 6 - Linked Lists](https://github.com/)  
+- [Code Challenge 6 - Linked Lists Insertions](https://github.com/sueduclos/data-structures-and-algorithms/pull/32)  
 
-- [Code Challenge 7 - Linked Lists](https://github.com/)  
+- [Code Challenge 7 - Linked Lists kth from end](https://github.com/)  
 
-- [Lab 11 - DSA: Stacks and Queues](https://github.com/)  
+- [Lab 11 - DSA: Stacks and Queues](https://github.com/sueduclos/data-structures-and-algorithms/tree/master/data-structures/stacksAndQueues)  
 
 - [Lab 15 - DSA: Trees](https://github.com/)
