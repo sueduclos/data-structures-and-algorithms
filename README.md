@@ -1,14 +1,35 @@
-# data-structures-and-algorithms
-Code Challenges for 301 and 401
+# Data Structures and Algorithms
 
-# Reverse an Array
-Code Challenge Class 01
+## Code Challenge Repository
 
-## Challenge
+## Code 301
 
-Write a function called reverseArray which takes an array as an argument. Without utilizing any of the built-in methods available to your language, return an array with elements in reversed order.
+Links Coming Soon!
 
-## Approach & Efficiency
+## Code 401
 
+### Challenges  
 
-## Solution
+- [Code Challenge 01 - Array Reverse](https://github.com/)
+
+- [Code Challenge 02 - Array Shift](https://github.com/)
+
+- [Code Challenge 03 - Array Binary Search](https://github.com/)
+
+- [Code Challenge 08 - Linked List Merge](https://github.com/)
+
+- [Code Challenge 12 - Fifo Animal Shelter](https://github.com/)
+
+- [Code Challenge 13 - Multi Bracket Validation](https://github.com/)
+
+### Data Structures  
+
+- [Lab 5 - DSA: Linked List](https://github.com/)
+
+- [Code Challenge 6 - Linked Lists](https://github.com/)  
+
+- [Code Challenge 7 - Linked Lists](https://github.com/)  
+
+- [Lab 11 - DSA: Stacks and Queues](https://github.com/)  
+
+- [Lab 15 - DSA: Trees](https://github.com/)
