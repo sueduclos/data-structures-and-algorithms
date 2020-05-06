@@ -13,18 +13,69 @@ class BinaryTree {
     this.root = null;
   }
 
-  preOrder()
+  preOrder(root = this.root) {
+    if (!root)
+      return;
+    
+    let rootArr = [];
+    let leftArr = [];
+    let rightArr = [];
+
+    rootArr.push(root.val);
+
+    if (root.left) {
+      let leftArr = this.preOrder(root.left);
+    }
+    
+    if (root.right) {
+      let rightArr = this.preOrder(root.right);
+    }
+    
+    rootArr = [...rootArr, ...leftArr, ...rightArr]
+
+    return rootArr;
+  }
 
   inOrder()
 
   postOrder()
 }
 
-class BinaryTreeSearch extends BinaryTree {
+class BinarySearchTree extends BinaryTree {
+  constructor() {
+    super();
+  }
 
-  add(val)
+  add(val) {
+    if (!this.root) {
+      this.root = new Node(val);
+      return;
+    }
 
-  contains(val)
+    let currentNode = this.root;
+
+    while(currentNode) {
+      if (currentNode.val > val)
+         if (!currentNode.left) {
+           currentNode.left = new Node(val);
+           return;
+         } else currentNode = currentNode.left;
+
+      else if (currentNode.val < val)
+        if (!currentNode.right) {
+          currentNode.right = new Node(val);
+          return;
+        } else currentNode = currentNode.right;
+
+      else if (currentNode.val === val)
+        return;
+    }
+  }
+
+  contains(val) {
+
+  }
 
 }
 
+module.exports = {Node, Binary, BinarySearchTree};
