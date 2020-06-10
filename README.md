@@ -22,6 +22,8 @@ Links Coming Soon!
 
 - [Code Challenge 13 - Multi Bracket Validation](https://github.com/)
 
+- [Code Challenge 21 - Insertion Sort](https://github.com/)
+
 ### Data Structures  
 
 - [Lab 5 - DSA: Linked List](https://github.com/sueduclos/data-structures-and-algorithms/tree/master/data-structures/linkedList)
