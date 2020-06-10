@@ -1,4 +1,5 @@
 # Insertion Sort
+
 Code Challenge Class 21
 
 ## Challenge
@@ -25,6 +26,6 @@ Code Challenge Class 21
 See [BLOG.md](www.xyz.com)
 
 ## Efficiency
+
 * Time: O(n^2)
 * Space: O(1)
-
