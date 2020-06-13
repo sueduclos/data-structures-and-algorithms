@@ -22,7 +22,7 @@ Links Coming Soon!
 
 - [Code Challenge 13 - Multi Bracket Validation](https://github.com/)
 
-- [Code Challenge 21 - Insertion Sort](https://github.com/)
+
 
 ### Data Structures  
 
@@ -35,3 +35,7 @@ Links Coming Soon!
 - [Lab 11 - DSA: Stacks and Queues](https://github.com/sueduclos/data-structures-and-algorithms/tree/master/data-structures/stacksAndQueues)  
 
 - [Lab 15 - DSA: Trees](https://github.com/)
+
+- [Code Challenge 21 - Insertion Sort](https://github.com/)
+
+- [Code Challenge 22 - Merge Sort](https://github.com/)
