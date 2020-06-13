@@ -1,6 +1,7 @@
-## Insertion Sort
+# Insertion Sort
 
-### Pseudocode
+## Pseudocode
+
 ```
  InsertionSort(int[] arr)
   
@@ -14,8 +15,9 @@
         j <-- j - 1
         
       arr[j + 1] <-- temp
-  ```
-  ### Trace
+```
+
+### Trace
   
   Sample Array: `[8,4,23,42,16,15]`
   
@@ -31,9 +33,8 @@
   
   **Pass 6:**
   
-  ### Efficency
+### Efficiency
   
   *Time: O(n^2)
   
   *Space: O(1)
-  
