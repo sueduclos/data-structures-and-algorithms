@@ -1,4 +1,4 @@
-# Insertion Sort
+# Merge Sort
 
 Code Challenge Class 22
 
