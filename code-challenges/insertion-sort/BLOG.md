@@ -1,11 +1,11 @@
-## Insertion Sort
+# Insertion Sort
 
 ### Pseudocode
 ```
  InsertionSort(int[] arr)
   
     FOR i = 1 to arr.length
-    
+
       int j <-- i - 1
       int temp <-- arr[i]
       
