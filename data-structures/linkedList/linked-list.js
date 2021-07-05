@@ -1,5 +1,7 @@
 'use strict';
 
+import { appendToMemberExpression, isModuleDeclaration } from "@babel/types";
+
 class Node {
   constructor(val) {
     this.val = val;
@@ -43,4 +45,19 @@ class LinkedList {
     console.log(str);
   }
 }
+
+// append(val) {
+//   let newNode = new Node(val);
+
+// }
+
+// insertBefore(val, newVal) {
+
+// }
+
+// insertAfter(val, newVal) {
+
+// }
+
+module.exports = {Node, LinkedList};
 
