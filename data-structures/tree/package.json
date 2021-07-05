@@ -10,5 +10,8 @@
     "test-watch": "jest --watchAll --verbose --coverage"
   },
   "author": "Sue Duclos",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^26.0.1"
+  }
 }
